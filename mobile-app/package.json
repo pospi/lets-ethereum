@@ -3,13 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "crna-make-symlinks-for-yarn-workspaces": "^1.0.1",
     "flow-bin": "0.56.0",
     "jest-expo": "26.0.0",
+    "metro-bundler-config-yarn-workspaces": "^1.0.3",
     "react-native-scripts": "1.13.1",
     "react-test-renderer": "16.3.0-alpha.1"
   },
-  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "main": "crna-entry.js",
   "scripts": {
+    "prestart": "node link-workspaces.js",
     "start": "react-native-scripts start",
     "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",

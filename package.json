@@ -1,4 +1,12 @@
 {
   "private": true,
-  "workspaces": ["mobile-app", "lets-contracts"]
+  "workspaces": [
+    "mobile-app",
+    "lets-contracts",
+    "maleny-lets-views"
+  ],
+  "scripts": {
+    "dev": "npm run dev:app",
+    "dev:app": "cd mobile-app && yarn start"
+  }
 }

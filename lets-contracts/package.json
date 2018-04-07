@@ -1,0 +1,28 @@
+{
+  "name": "lets-contracts",
+  "version": "0.0.1",
+  "description": "LETS trading system implemented against ERC20 spec",
+  "main": "LETSToken.sol",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pospi/lets-ethereum.git"
+  },
+  "keywords": [
+    "LETS",
+    "Ethereum",
+    "Solidity",
+    "React",
+    "Native",
+    "complementary",
+    "currency"
+  ],
+  "author": "ConsenSys",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pospi/lets-ethereum/issues"
+  },
+  "homepage": "https://github.com/pospi/lets-ethereum#readme"
+}

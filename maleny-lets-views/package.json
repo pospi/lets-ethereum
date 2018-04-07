@@ -1,0 +1,27 @@
+{
+  "name": "maleny-lets-views",
+  "version": "0.0.1",
+  "description": "View components for Maleny LETS community mobile app",
+  "main": "guidebook.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pospi/lets-ethereum.git"
+  },
+  "keywords": [
+    "LETS",
+    "Maleny",
+    "React",
+    "Native",
+    "UI",
+    "components"
+  ],
+  "author": "ConsenSys",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pospi/lets-ethereum/issues"
+  },
+  "homepage": "https://github.com/pospi/lets-ethereum#readme"
+}

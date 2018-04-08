@@ -8,6 +8,7 @@ A LETS currency system and mobile application built for Ethereum-like networks.
 - [How to use](#how-to-use)
 - [Modules](#modules)
 - [File structure](#file-structure)
+- [Future](#future)
 - [License](#license)
 
 <!-- /MarkdownTOC -->
@@ -41,6 +42,9 @@ This repo uses [Yarn workspaces](https://yarnpkg.com/lang/en/docs/workspaces/) t
 
 There are problems with this- see https://github.com/viewstools/yarn-workspaces-cra-crna for workarounds currently employed.
 
+## Future
+
+Something to keep in mind- this app will eventually need to be 'ejected' from Expo in order to run a fully native layer so that we can sync pending blockchain transactions in the background when 3G connectivity is restored to the device.
 
 
 

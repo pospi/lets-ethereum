@@ -4,7 +4,9 @@
   "description": "LETS trading system implemented against ERC20 spec",
   "main": "LETSToken.sol",
   "scripts": {
-    "test": "npm run test"
+    "build": "dapp build",
+    "clean": "dapp clean",
+    "test": "dapp test"
   },
   "repository": {
     "type": "git",
@@ -24,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/pospi/lets-ethereum/issues"
   },
-  "homepage": "https://github.com/pospi/lets-ethereum#readme"
+  "homepage": "https://github.com/pospi/lets-ethereum#readme",
+  "devDependencies": {
+    "solc": "0.4.21"
+  }
 }

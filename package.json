@@ -6,6 +6,8 @@
     "maleny-lets-views"
   ],
   "scripts": {
+    "preinstall": "./check-deps.sh",
+    "postinstall": "git submodule init && git submodule update",
     "dev": "npm run dev:app",
     "dev:app": "cd mobile-app && yarn start",
     "reset:modules": "rm -rf node_modules mobile-app/node_modules maleny-lets-views/node_modules lets-contracts/node_modules"

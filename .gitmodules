@@ -1,0 +1,3 @@
+[submodule "lets-contracts/lib/ds-test"]
+	path = lets-contracts/lib/ds-test
+	url = https://github.com/dapphub/ds-test

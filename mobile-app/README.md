@@ -2,6 +2,7 @@
 
 - [About](#about)
 - [Setting up / quickstart](#setting-up--quickstart)
+- [Using the app](#using-the-app)
 - [Other commands](#other-commands)
 - [TODO](#todo)
     - [Customizing App Display Name and Icon](#customizing-app-display-name-and-icon)
@@ -36,6 +37,22 @@ npm start --reset-cache
 # or
 yarn start --reset-cache
 ```
+
+## Using the app
+
+Primary design goals of this application are to be as frictionless to use as possible, and to work in remote areas of poor network coverage. In practical terms we've designed a system which requires only 1 data transmission in order to verify an exchange "securely-enough" in the absence of internet connectivity.
+
+We thus made the choice to put this onus on the payee; it is their incentive as the ones receiving a credit to "cash the check", as it were.
+
+Prior to engaging, the buyer may optionally scan token prices for goods / services on sale, to avoid having to manually enter a credit value. But this initial scan is for convenience only and is not required to trade.
+
+Once the buyer and seller have agreed upon a value, the exchange system works as follows:
+
+- The buyer inputs the number of credits to release to the seller
+- The buyer's device generates a nonce and signs an "approve" transaction authorizing anyone holding the nonce to spend the specified amount of their tokens
+- The seller scans the buyer's device, receiving the signed approval transaction and nonce for claiming the payment
+- It is now the responsibility of the seller to return to normal network coverage and broadcast the buyer's transaction to the network, as well as a subsequent transaction of their own to claim the released funds. The buyer's device may also synchronise their half of the transaction ahead of time.
+- *"Would you like a receipt?"* is the normal social contract whereby the seller would have the buyer scan their device a second time, such that each party now holds both transactions ready for broadcast to the network.
 
 ## Other commands
 
